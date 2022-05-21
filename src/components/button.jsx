@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import '../stylesheets/button.css';
 
 function Button({ texto, isClickButton, manageClick }) {
-  return(
+  return (
     <button
-      className={isClickButton ? "button-click" : "button-reset"}
-      onClick={manageClick}>
+      className={isClickButton ? 'button-click' : 'button-reset'}
+      onClick={manageClick}
+    >
       {texto}
     </button>
   );
