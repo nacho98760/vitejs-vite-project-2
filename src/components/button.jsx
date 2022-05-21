@@ -13,3 +13,4 @@ function Button({ texto, isClickButton, manageClick }) {
 }
 
 export default Button;
+

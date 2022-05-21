@@ -33,6 +33,7 @@ function App() {
           manageClick={resetCounter}
         />
       </div>
+      <div></div>
     </div>
   )
 }
