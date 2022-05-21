@@ -1,4 +1,5 @@
 import React from 'react';
+import '../stylesheets/contador.css'
 
 function Contador({ numOfClicks}) {
   return (
@@ -7,3 +8,5 @@ function Contador({ numOfClicks}) {
     </div>
   );
 }
+
+export default Contador;

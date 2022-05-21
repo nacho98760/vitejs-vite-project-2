@@ -1,21 +1,27 @@
-import React from 'react'
+import { useState } from 'react'
 import './stylesheets/App.css'
 import Button from './components/button'
+import Contador from './components/contador'
 
 function App() {
 
+  const [numOfClicks, setNumOfClicks] = useState(0); 
+
   const manageClick = () => {
-    console.log("Button clicked")
+    setNumOfClicks(numOfClicks + 1);
   }
 
   const resetCounter = () => {
-    console.log("Counter reseted")
+    setNumOfClicks(0)
   }
 
 
   return (
     <div className="App">
       <div className="contenedor-principal">
+        <Contador
+          numOfClicks={numOfClicks}
+        />
         <Button
           texto="Click"
           isClickButton={true}
